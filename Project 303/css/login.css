@@ -1,0 +1,37 @@
+html, body { margin: 0; padding: 0; }
+body { background-color: #f1f1f1; height: 100%; }
+
+.login_bar { background-color: #28262C; height: 80px; width: 100%; border-bottom: 1px outset; }
+.login_container { width: 100%; max-width: 1300px; margin: 0 auto; }
+.login_content_container { float: left; width: 50%; }
+.login_logo_container { margin-left: 50px; color: #fff; }
+.login_logo_container h2 { text-shadow: 1px 1px #000; }
+.login_form_container { padding-top: 10px; color: #fff; font-size: 12px; font-family: Arial, Helvetica, sans-serif; }
+
+.input_text { border: 1px solid #000; width: 120px; font-size: 11px; padding: 4px; }
+td { padding-right: 10px; }
+.login_button { background-color: #322F37; color: #fff; border: 1px solid #000; border-radius: 1px; font-weight: bold; }
+.login_button:hover { background-color: #28262C; }
+a { color: #62b3e6; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+
+.content_container { height: 90vh; width: 100%; }
+.about_container { width: 50%; float: left; height: 100%; text-align: center; }
+
+.signin_container { background-color: #fff; width: 50%; float: right; height: 100%; align: center; text-align: center; }
+.signin_container h3 { color: #28262C; }
+.signin_container input { background-color: #f1f1f1; border: none; display: block; width: 250px; margin: 0 auto; margin-top: 10px; padding: 10px; }
+.signup_button { background-color: #62b3e6; color: #fff; font-weight: bold; border: none; margin-top: 10px; padding: 5px;  }
+.signup_button:hover { background-color: #94D2F9; }
+
+.footer { position: absolute; bottom: 0; width: 50%; border-top: 1px dotted #000; }
+
+@media (max-width: 730px) {
+	.login_logo_container { display: none; }
+	.login_form_container table { margin: 0 auto;  }
+	.content_container { height: auto; }
+	.about_container { float: none; width: 100%; }
+	.signin_container { float: none; width: 100%; }
+	.footer { position: relative; width: 100%; margin-top: 20px; }
+}

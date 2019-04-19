@@ -1,0 +1,38 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../../css/style.css" />
+<link href="https://fonts.googleapis.com/css?family=Jockey+One" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="../../css/header.css" />
+
+<div class = "navbar">
+	<div class = "content_bar">
+		<div class = "logo_container"><h3>PROJECT 303</h3></div>
+		<div class = "content_container">
+			<div class = "selected content_item"><a href = ""><h3>Home</h3></a></div>
+			<div class = "content_item"><a href = ""><h3>Routine</h3></a></div>
+			<div class = "content_item"><a href = ""><h3>Progress</h3></a></div>
+			<i class = "fa fa-search"></i>
+		</div>
+		<div class = "user_container">
+			<a href = "#" id = "user_dropdown"><i class = "fa fa-user"></i></a>
+			<div class = "user_content">
+				<div class = "user_item"><h3>Logout</h3></div>
+				<div class = "user_item"><h3>Settings</h3></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+	var visible = false;
+	var dropdown = document.getElementById('user_dropdown');
+	dropdown.onclick = function() {
+		if(!visible) {
+			document.querySelector('.user_content').style.visibility = "visible";
+			visible = true;
+		}
+		else {
+			document.querySelector('.user_content').style.visibility = "hidden";
+			visible = false;
+		}
+	}
+</script>
